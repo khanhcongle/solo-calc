@@ -2,13 +2,13 @@
   export let results;
 </script>
 
-<table>
+<table class="table-auto">
   <tr>
-    <th>id</th>
-    <th>test</th>
-    <th>expected</th>
-    <th>actual</th>
-    <th>result</th>
+    <th class="border border-slate-300">id</th>
+    <th class="border border-slate-300">test</th>
+    <th class="border border-slate-300">expected</th>
+    <th class="border border-slate-300">actual</th>
+    <th class="border border-slate-300">result</th>
   </tr>
 	{#each results as { id, test, expected, actual, isCorrect }, i}
 		<tr>
@@ -22,21 +22,4 @@
 </table>
 
 <style>
-td, th {
-  border: 1px solid #ddd;
-  padding: 8px;
-  min-width: 68px;
-}
-
-tr:nth-child(even){background-color: #f2f2f2;}
-
-tr:hover {background-color: #ddd;}
-
-th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #04AA6D;
-  color: white;
-}
 </style>
