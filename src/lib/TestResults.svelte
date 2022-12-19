@@ -2,7 +2,7 @@
   export let results;
 </script>
 
-<table class="table-auto">
+<table class="table-auto w-full">
   <tr>
     <th class="border border-slate-300">id</th>
     <th class="border border-slate-300">test</th>
