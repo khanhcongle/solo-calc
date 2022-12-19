@@ -11,12 +11,12 @@
     <th class="border border-slate-300">result</th>
   </tr>
 	{#each results as { id, test, expected, actual, isCorrect }, i}
-		<tr>
-      <td>{id}</td>
-      <td>{test}</td>
-      <td>{expected}</td>
-      <td>{actual}</td>
-      <td>{isCorrect}</td>
+		<tr class="{isCorrect ? 'text-green-400' : 'text-red-400'}">
+      <td class="border border-slate-30 w-12">{id}</td>
+      <td class="border border-slate-30 w-24">{test}</td>
+      <td class="border border-slate-30 w-24">{expected}</td>
+      <td class="border border-slate-30 w-24">{actual}</td>
+      <td class="border border-slate-30 w-24">{isCorrect}</td>
     </tr>
 	{/each}
 </table>
