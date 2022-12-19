@@ -21,8 +21,10 @@
 <main>
   <div class="card">
     <form on:submit|preventDefault={onSubmit}>
-      <label for="answer">{currentTest.test} = </label>
-      <input id="answer" name="answer">
+      <div class="pt-2 pb-2">
+        <label for="answer">{currentTest.test} = </label>
+        <input id="answer" name="answer" class="border border-gray-300">
+      </div>
       <TestResults {results} />
     </form>
   </div>
